@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Char</title>
+</head>
+<body>
+
+    <p>
+        Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+    </p>
+    <script>
+        const solution = (str) => str.split("").map((c) => c + c).join("");
+
+        function doubleChar(str) {
+	var word = '';
+  for (var i = 0; i < str.length; i++){
+  	word = word + str[i] + str[i];
+  };
+  return word;
+};
+    </script>
+</body>
+</html>
