@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing Elements</title>
+</head>
+<body>
+    <p>
+        Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+
+        Example:
+        ["Keep", "Remove", "Keep", "Remove", "Keep", ...] ["Keep", "Keep", "Keep", ...] 
+    </p>
+
+
+    <script>
+        function removeEveryOther(arr){
+  //your code here
+  return arr.filter((el,i) =>{
+  return i % 2 === 0
+  })
+}
+    </script>
+</body>
+</html>
