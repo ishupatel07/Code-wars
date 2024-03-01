@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of positive</title>
+</head>
+<body>
+
+    <p>
+        Sum of positive
+    </p>
+    
+
+    <script>
+        function positiveSum(arr) {
+  let num = 0
+  for(let i =0; i < arr.length;i++){
+  if(arr[i] > 0){
+   num += arr[i]
+  }
+  }
+  return num
+}
+
+function positiveSum(arr){
+return arr.filter(x => x>=0).reduce((a,b) => (a+b),0)
+}
+    </script>
+</body>
+</html>
