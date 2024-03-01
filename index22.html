@@ -3,23 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Double Char</title>
+    <title>Find the first non-consecutive number
+    </title>
 </head>
 <body>
-
+    
     <p>
-        Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
-    </p>
-    <script>
-        const solution = (str) => str.split("").map((c) => c + c).join("");
+        Your task is to find the first element of an array that is not consecutive.
 
-        function doubleChar(str) {
-	var word = '';
-  for (var i = 0; i < str.length; i++){
-  	word = word + str[i] + str[i];
-  };
-  return word;
-};
+        By not consecutive we mean not exactly 1 larger than the previous element of the array.
+        
+        E.g. If we have an array [1,2,3,4,6,7,8] then 1 then 2 then 3 then 4 are all consecutive but 6 is not, so that's the first non-consecutive number.
+        
+        If the whole array is consecutive then return null2.
+        
+        The array will always have at least 2 elements1 and all elements will be numbers. The numbers will also all be unique and in ascending order. The numbers could be positive or negative and the first non-consecutive could be either too!
+    </p>
+
+
+    <script>
+        function firstNonConsecutive (arr) {
+  let num = arr[0];
+  for(let i = 0; i<arr.length; i++){
+    if (num != arr[i]){
+      return arr[i];
+    }
+    num++;
+  }
+  return null;
+}
+
+
+function firstNonConsecutive(arr) {
+  for (let i = 0; i < arr.length - 1; ++i) {
+    if (arr[i] + 1 !== arr[i + 1]) {
+      return arr[i + 1]
+    }
+  }
+  return null
+}
+
+
+
     </script>
 </body>
 </html>
