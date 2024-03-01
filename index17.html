@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square(n) Sum</title>
+</head>
+<body>
+    <p>
+        Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+For example, for [1, 2, 2] it should return 9 
+    </p>
+
+    <script>
+        function squareSum(numbers){
+let result  = 0;
+  for(let i = 0; i < numbers.length; i++){
+    result += (numbers[i]* numbers[i])
+  }
+
+   return result
+}
+    </script>
+</body>
+</html>
