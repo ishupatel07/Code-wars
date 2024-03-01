@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Playing Banjo?</title>
+</head>
+
+<body>
+    <p>
+        Create a function which answers the question "Are you playing banjo?".
+        If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+        The function takes a name as its only argument, and returns one of the following strings:
+    
+        name + " plays banjo" 
+        name + " does not play banjo"
+    
+    </p>
+
+    <script>
+            function areYouPlayingBanjo(name) {
+  return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+}
+    </script>
+</body>
+
+</html>
