@@ -13,18 +13,26 @@
 
 
 
-  var number = function(busStops){
-    // Good Luck!
-    let totalPassanger = 0;
-    for(let i = 0; i < busStops.length; i++){
-        totalPassanger += busStops[i][0]
-        console.log("1" , totalPassanger);
-        totalPassanger -= busStops[i][1]
-        console.log("a", busStops[i][1]);
-        console.log("2" , totalPassanger);
-    }
-    return totalPassanger
-  }
-console.log((number([[10,0],[3,5],[5,8]])));
+//   var number = function(busStops){
+//     // Good Luck!
+//     let totalPassanger = 0;
+//     for(let i = 0; i < busStops.length; i++){
+//         totalPassanger += busStops[i][0]
+//         console.log("1" , totalPassanger);
+//         totalPassanger -= busStops[i][1]
+//         console.log("a", busStops[i][1]);
+//         console.log("2" , totalPassanger);
+//     }
+//     return totalPassanger
+//   }
+// console.log((number([[10,0],[3,5],[5,8]])));
 
 
+
+
+const binaryArrayToNumber = arr => {
+    // your code
+      return parseInt(arr.join(""),2)
+      
+};
+console.log(binaryArrayToNumber([1,1,1,1]));
